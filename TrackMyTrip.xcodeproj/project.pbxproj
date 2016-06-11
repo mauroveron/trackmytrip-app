@@ -15,6 +15,7 @@
 		3437A9491D0B9F3D001FB9A5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3437A9471D0B9F3D001FB9A5 /* LaunchScreen.storyboard */; };
 		3437A9541D0B9F3D001FB9A5 /* TrackMyTripTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3437A9531D0B9F3D001FB9A5 /* TrackMyTripTests.swift */; };
 		3437A95F1D0B9F3D001FB9A5 /* TrackMyTripUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3437A95E1D0B9F3D001FB9A5 /* TrackMyTripUITests.swift */; };
+		3437A96D1D0BA558001FB9A5 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3437A96C1D0BA558001FB9A5 /* CoreLocation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		3437A95A1D0B9F3D001FB9A5 /* TrackMyTripUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TrackMyTripUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3437A95E1D0B9F3D001FB9A5 /* TrackMyTripUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackMyTripUITests.swift; sourceTree = "<group>"; };
 		3437A9601D0B9F3D001FB9A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3437A96C1D0BA558001FB9A5 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3437A96D1D0BA558001FB9A5 /* CoreLocation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,6 +82,7 @@
 		3437A9301D0B9F3D001FB9A5 = {
 			isa = PBXGroup;
 			children = (
+				3437A96C1D0BA558001FB9A5 /* CoreLocation.framework */,
 				3437A93B1D0B9F3D001FB9A5 /* TrackMyTrip */,
 				3437A9521D0B9F3D001FB9A5 /* TrackMyTripTests */,
 				3437A95D1D0B9F3D001FB9A5 /* TrackMyTripUITests */,
@@ -196,6 +200,12 @@
 				TargetAttributes = {
 					3437A9381D0B9F3D001FB9A5 = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = D22L8AEZCK;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 					3437A94E1D0B9F3D001FB9A5 = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -403,10 +413,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = TrackMyTrip/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mauroveron.TrackMyTrip;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -414,10 +427,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = TrackMyTrip/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mauroveron.TrackMyTrip;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
