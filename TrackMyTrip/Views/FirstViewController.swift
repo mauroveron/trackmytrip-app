@@ -9,12 +9,14 @@
 import UIKit
 import CoreLocation
 import MapKit
+import RealmSwift
 
 class FirstViewController: UIViewController, CLLocationManagerDelegate {
     
     @IBOutlet var map: MKMapView?
 
     var manager: CLLocationManager!
+    let realm: Realm = try! Realm()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,6 +36,12 @@ class FirstViewController: UIViewController, CLLocationManagerDelegate {
     
     func locationManager(manager: CLLocationManager, didUpdateToLocation newLocation: CLLocation, fromLocation oldLocation: CLLocation) {
         NSLog("location update: \(newLocation.coordinate.latitude, newLocation.coordinate.longitude)")
+        let location = Location()
+        location.lat = newLocation.coordinate.latitude
+        location.lon = newLocation.coordinate.longitude
+        try! realm.write {
+            realm.add(location)
+        }
     }
     
     @IBAction func toggleTracking(sender: UISwitch) {
@@ -43,6 +51,8 @@ class FirstViewController: UIViewController, CLLocationManagerDelegate {
         } else {
             manager.stopUpdatingLocation()
             NSLog("--- stopped tracking")
+            let locations = realm.objects(Location.self)
+            print(locations.count)
         }
     }
 
