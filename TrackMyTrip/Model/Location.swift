@@ -12,7 +12,7 @@ import RealmSwift
 
 class Location: Object {
 
-    dynamic var tstamp: Int = 0
+    dynamic var timestamp: Double = 0
     dynamic var lat: Double = 0.0
     dynamic var lon: Double = 0.0
     
