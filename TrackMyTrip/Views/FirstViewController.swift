@@ -22,6 +22,7 @@ class FirstViewController: UIViewController, CLLocationManagerDelegate {
         manager = CLLocationManager()
         manager.desiredAccuracy = kCLLocationAccuracyBest
         manager.delegate = self
+        manager.distanceFilter = 200
         manager.requestAlwaysAuthorization()
         map?.showsUserLocation = true
     }
