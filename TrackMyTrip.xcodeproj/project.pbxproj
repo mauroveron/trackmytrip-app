@@ -103,9 +103,8 @@
 		3437A93B1D0B9F3D001FB9A5 /* TrackMyTrip */ = {
 			isa = PBXGroup;
 			children = (
+				34EE49F21D0CD5F9008A6693 /* Views */,
 				3437A93C1D0B9F3D001FB9A5 /* AppDelegate.swift */,
-				3437A93E1D0B9F3D001FB9A5 /* FirstViewController.swift */,
-				3437A9401D0B9F3D001FB9A5 /* SecondViewController.swift */,
 				3437A9421D0B9F3D001FB9A5 /* Main.storyboard */,
 				3437A9451D0B9F3D001FB9A5 /* Assets.xcassets */,
 				3437A9471D0B9F3D001FB9A5 /* LaunchScreen.storyboard */,
@@ -130,6 +129,15 @@
 				3437A9601D0B9F3D001FB9A5 /* Info.plist */,
 			);
 			path = TrackMyTripUITests;
+			sourceTree = "<group>";
+		};
+		34EE49F21D0CD5F9008A6693 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				3437A93E1D0B9F3D001FB9A5 /* FirstViewController.swift */,
+				3437A9401D0B9F3D001FB9A5 /* SecondViewController.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -502,6 +510,7 @@
 				3437A9651D0B9F3D001FB9A5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3437A9661D0B9F3D001FB9A5 /* Build configuration list for PBXNativeTarget "TrackMyTripTests" */ = {
 			isa = XCConfigurationList;
@@ -510,6 +519,7 @@
 				3437A9681D0B9F3D001FB9A5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3437A9691D0B9F3D001FB9A5 /* Build configuration list for PBXNativeTarget "TrackMyTripUITests" */ = {
 			isa = XCConfigurationList;
@@ -518,6 +528,7 @@
 				3437A96B1D0B9F3D001FB9A5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
