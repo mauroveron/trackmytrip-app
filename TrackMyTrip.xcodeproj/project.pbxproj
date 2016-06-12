@@ -16,6 +16,7 @@
 		3437A9541D0B9F3D001FB9A5 /* TrackMyTripTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3437A9531D0B9F3D001FB9A5 /* TrackMyTripTests.swift */; };
 		3437A95F1D0B9F3D001FB9A5 /* TrackMyTripUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3437A95E1D0B9F3D001FB9A5 /* TrackMyTripUITests.swift */; };
 		3437A96D1D0BA558001FB9A5 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3437A96C1D0BA558001FB9A5 /* CoreLocation.framework */; };
+		34EE49FE1D0CDF89008A6693 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34EE49FD1D0CDF89008A6693 /* MapKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		3437A95E1D0B9F3D001FB9A5 /* TrackMyTripUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackMyTripUITests.swift; sourceTree = "<group>"; };
 		3437A9601D0B9F3D001FB9A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3437A96C1D0BA558001FB9A5 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		34EE49FD1D0CDF89008A6693 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				34EE49FE1D0CDF89008A6693 /* MapKit.framework in Frameworks */,
 				3437A96D1D0BA558001FB9A5 /* CoreLocation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -82,6 +85,7 @@
 		3437A9301D0B9F3D001FB9A5 = {
 			isa = PBXGroup;
 			children = (
+				34EE49FD1D0CDF89008A6693 /* MapKit.framework */,
 				3437A96C1D0BA558001FB9A5 /* CoreLocation.framework */,
 				3437A93B1D0B9F3D001FB9A5 /* TrackMyTrip */,
 				3437A9521D0B9F3D001FB9A5 /* TrackMyTripTests */,

@@ -8,9 +8,12 @@
 
 import UIKit
 import CoreLocation
+import MapKit
 
 class FirstViewController: UIViewController, CLLocationManagerDelegate {
     
+    @IBOutlet var map: MKMapView?
+
     var manager: CLLocationManager!
 
     override func viewDidLoad() {
@@ -20,6 +23,7 @@ class FirstViewController: UIViewController, CLLocationManagerDelegate {
         manager.desiredAccuracy = kCLLocationAccuracyBest
         manager.delegate = self
         manager.requestAlwaysAuthorization()
+        map?.showsUserLocation = true
     }
 
     override func didReceiveMemoryWarning() {
