@@ -15,6 +15,9 @@ class Location: Object {
     dynamic var timestamp: Double = 0
     dynamic var lat: Double = 0.0
     dynamic var lon: Double = 0.0
+    dynamic var speed: Double = 0.0
+    dynamic var altitude: Double = 0.0
+    dynamic var course: Double = 0.0
     
 // Specify properties to ignore (Realm won't persist these)
     
